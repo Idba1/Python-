@@ -1,2 +1,1 @@
-_variable
-print(sum)
+daffodil
