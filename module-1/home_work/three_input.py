@@ -1,0 +1,8 @@
+number1=input('enter first number: ')
+number2=input('enter second number: ')
+number3=input('enter third number: ')
+print(type(number1) ,type(number2), type(number3) )
+inum1=int(number1)
+inum2=int(number2)
+inum3=int(number3)
+print(type(inum1) ,type(inum2), type(inum3) )
