@@ -30,3 +30,10 @@ def multiply(*numbers):
 
 result_mul = multiply(2, 2, 2, 2)
 print(result_mul)
+
+
+def multiply2(num1, num2, *numbers):
+    print(num1, num2, numbers)
+
+
+multiply2(2, 2, 3, 654, 23)
