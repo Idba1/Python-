@@ -31,3 +31,22 @@ for mark in marks:
     print(mark, value)
     total = total + value
 print(total)
+
+total = 0
+print(total)
+marks = {"phy": 14, "che": 98, "bio": 34}
+for mark, value in marks.items():
+    print(mark, value)
+    total = total + value
+print(total)
+
+
+total = 0
+print(total)
+numbers = [12, 23, 4, 534, 63, 63, 23, 234, 35, 354]
+for num in enumerate(numbers):
+    print(num)
+for i, num in enumerate(numbers):
+    print(i, num)
+    total = total + num
+print(total)
