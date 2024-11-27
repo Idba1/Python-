@@ -29,3 +29,7 @@ doubled_it = lambda x: x * 2
 doubled_it2 = map(doubled_it, numbers)
 print(numbers)
 print(list(doubled_it2))
+
+# in shortcut
+doubled_num = map(lambda x: x * 2, numbers)
+print("output for shortcut-->", list(doubled_num))
