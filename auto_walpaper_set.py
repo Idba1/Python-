@@ -1,7 +1,10 @@
 # download and change desktop wallpaper automatically
+# pip install requests
+# pip install PyWallpaper
 
 import requests
 import json
+import PyWallpaper
 
 api_url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
 
@@ -30,3 +33,6 @@ res = requests.get(image_url)
 ### save the image ###
 with open("idba_nasa.png", "wb") as image:
     image.write(res.content)
+
+# set wallpaper
+PyWallpaper.change_wallpaper("E:\phitron-1\Python Course\idba_nasa.png")
