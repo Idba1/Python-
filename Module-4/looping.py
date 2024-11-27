@@ -50,3 +50,7 @@ for i, num in enumerate(numbers):
     print(i, num)
     total = total + num
 print(total)
+
+country = "Bangladesh"
+for char in country:
+    print(char)
