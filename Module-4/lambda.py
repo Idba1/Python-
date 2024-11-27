@@ -22,3 +22,10 @@ for num in numbers:
     doubleList.append(double)
 print(numbers)
 print(doubleList)
+
+# module
+numbers = [12, 23, 4, 534, 63, 63, 23, 234, 35, 354]
+doubled_it = lambda x: x * 2
+doubled_it2 = map(doubled_it, numbers)
+print(numbers)
+print(list(doubled_it2))
