@@ -47,3 +47,17 @@ even_numbers = filter(lambda num: num % 2 == 0 and num > 0, numbers)
 print(list(even_numbers))
 odd_numbers = filter(lambda num: num % 2 == 1 and num > 0, numbers)
 print(list(odd_numbers))
+
+
+# filter in dictionary
+actors = [
+    {"name": "sakib", "age": 34},
+    {"name": "Rakib", "age": 54},
+    {"name": "akib", "age": 24},
+    {"name": "korim", "age": 44},
+    # {"name": "rahim", "age": -74},
+]
+senior_artist = filter(lambda actor: actor["age"] > 30, actors)
+print(list(senior_artist))
+junior_artist = filter(lambda actor: actor["age"] < 30 and actor["age"] > 0, actors)
+print(list(junior_artist))
