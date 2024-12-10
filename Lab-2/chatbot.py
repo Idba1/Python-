@@ -9,6 +9,7 @@ steps:
 
 greet_words = ["hi", "hey", "hlw", "hello", "assalamu", " alaikum", "yo"]
 bye_words = ["bye", "tata", "see you", "by"]
+bad_words = ["dog", "pocha"]
 
 
 def listen():
@@ -16,14 +17,26 @@ def listen():
 
 
 def decide(command):
+    command = command.lower()
     print("decide", command)
     broken_word = command.split(" ")
     print(broken_word)
 
+    for word in broken_word:
+        if word in greet_words:
+            talkBack("Hi Human!")
 
-def talkBack():
-    pass
+        elif word in bye_words:
+            talkBack("Tata Human!")
+
+        elif word in bad_words:
+            talkBack("You are a bad Human. Behave yourself!")
 
 
-command = listen()
-decide(command)
+def talkBack(response):
+    print(response)
+
+
+while True:
+    command = listen()
+    decide(command)
